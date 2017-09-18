@@ -1,0 +1,19 @@
+<app-appbar [sidenav]="sidenav"></app-appbar>
+
+<md-sidenav-container>
+  <md-sidenav #sidenav mode="{{sidenavMode}}" opened="{{sidenavOpened}}">
+    <app-sidenav [sidenav]="sidenav"></app-sidenav>
+  </md-sidenav>
+
+  <section class="main-container">
+    <router-outlet></router-outlet>
+  </section>
+</md-sidenav-container>
+
+<footer>
+  <ul class="flex">
+      <li><a href="https://github.com/treetips/angular-material-sidenav-example" target="_blank">Github</a></li>
+      <li><a href="https://hub.docker.com/" target="_blank">Docker hub</a></li>
+      <li><a href="http://www.bunkei-programmer.net/" target="_blank">blog</a></li>
+  </ul>
+</footer>

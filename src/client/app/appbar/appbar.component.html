@@ -1,0 +1,8 @@
+<header>
+  <md-toolbar color="primary" class="mat-elevation-z6">
+    <span *ngIf="sidenav.mode === 'over'">
+      <md-icon (click)="toggleSidenav($event)">menu</md-icon>&nbsp;
+    </span>
+    <span>Auto toggle sidenav example</span>
+  </md-toolbar>
+</header>
